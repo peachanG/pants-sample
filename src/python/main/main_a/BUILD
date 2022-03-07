@@ -4,7 +4,8 @@ pex_binary(
     dependencies=[
         ":lib",
     ],
-    platforms=["linux-x86_64-cp-38-cp38"]
+    platforms=["linux-x86_64-cp-38-cp38"],
+    shebang="/usr/bin/env python3.8"
 )
 python_sources(name="lib", dependencies=["src/python/lib/lib_a"])
 
