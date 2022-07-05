@@ -1,0 +1,4 @@
+numpy
+absl-py
+tensorflow
+tensorflow-io

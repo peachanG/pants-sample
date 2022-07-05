@@ -7,6 +7,7 @@ pex_binary(
     platforms=["linux-x86_64-cp-38-cp38"],
     shebang="/usr/bin/env python3.8"
 )
+
 python_sources(name="lib", dependencies=["src/python/lib/lib_a"])
 
 docker_image(name="docker", dependencies=["src/python/main/main_a:main"])
