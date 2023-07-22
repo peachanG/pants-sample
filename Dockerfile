@@ -23,5 +23,5 @@ RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade setuptools
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
 
-ENTRYPOINT ["/bin/main_a"]
-COPY src.python.main.main_a/main.pex /bin/main_a
+ENTRYPOINT ["/bin/whisper"]
+COPY src.python.main.whisper/main.pex /bin/whisper
