@@ -8,12 +8,11 @@ python_sources(
 pex_binary(
     name="main",
     entry_point="main.py",
-    environment="python_bullseye",
     dependencies=[
         ":lib",
     ],
 )
 
 docker_image(
-    name="docker",
+    name="whisper_docker"
 )

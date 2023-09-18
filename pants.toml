@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.16.0"
+pants_version = "2.17.0"
 backend_packages.add = [
   "pants.backend.docker",
   "pants.backend.python"
@@ -14,10 +14,6 @@ root_patterns = ["src/python"]
 
 [python.resolves]
 python-default = "thirdparty/python/python-default.lock"
-
-[environments-preview.names]
-macos = "//:macos_laptop"
-python_bullseye = "//:python_bullseye"
 
 [anonymous-telemetry]
 enabled = false
