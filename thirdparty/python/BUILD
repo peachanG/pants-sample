@@ -1,5 +1,6 @@
 python_requirement(
     name="whisper",
+    modules=["whisper"],
     requirements=[
         "openai-whisper==20230314",
         "torch==2.0.1",

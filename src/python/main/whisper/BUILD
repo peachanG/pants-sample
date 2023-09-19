@@ -8,6 +8,8 @@ python_sources(
 pex_binary(
     name="main",
     entry_point="main.py",
+    layout="packed",
+    execution_mode="venv",
     dependencies=[
         ":lib",
     ],
